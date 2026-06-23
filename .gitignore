@@ -1,0 +1,4 @@
+# only the JSON cards + index live in the zoo; nothing else
+*.joblib
+*.csv
+*.npy

@@ -1,0 +1,232 @@
+{
+  "cards": [
+    {
+      "id": "mc_barren_v1",
+      "name": "Barren split (barren_other / mining)",
+      "kind": "model",
+      "type": null,
+      "node": "barren",
+      "topology": "per_node_split",
+      "classes": [
+        "barren_other",
+        "mining"
+      ],
+      "extent_bbox": [
+        68.0,
+        6.5,
+        97.5,
+        37.5
+      ],
+      "accuracy": 0.867,
+      "published": true,
+      "created": "2026-06-23T16:41:30.466253+00:00"
+    },
+    {
+      "id": "mc_greenery_v1",
+      "name": "Greenery split (crops / shrubs / trees)",
+      "kind": "model",
+      "type": null,
+      "node": "greenery",
+      "topology": "per_node_split",
+      "classes": [
+        "crops",
+        "shrubs",
+        "trees"
+      ],
+      "extent_bbox": [
+        68.0,
+        6.5,
+        97.5,
+        37.5
+      ],
+      "accuracy": 0.963,
+      "published": true,
+      "created": "2026-06-23T16:41:30.414020+00:00"
+    },
+    {
+      "id": "mc_root_v1",
+      "name": "Core Stack base map \u2014 4-class LULC (India)",
+      "kind": "model",
+      "type": null,
+      "node": "root",
+      "topology": "base_pooled",
+      "classes": [
+        "barren",
+        "built_up",
+        "greenery",
+        "water"
+      ],
+      "extent_bbox": [
+        68.0,
+        6.5,
+        97.5,
+        37.5
+      ],
+      "accuracy": 0.8,
+      "published": true,
+      "created": "2026-06-23T16:41:30.186231+00:00"
+    },
+    {
+      "id": "ds_alphaearth_annual_v1",
+      "name": "Alpha Earth annual embeddings (64-d) \u2014 model input features",
+      "kind": "dataset",
+      "type": "inference",
+      "node": null,
+      "topology": null,
+      "classes": [],
+      "extent_bbox": [
+        68.0,
+        6.5,
+        97.5,
+        37.5
+      ],
+      "accuracy": null,
+      "published": null,
+      "created": "2026-06-23T16:41:24.234160+00:00"
+    },
+    {
+      "id": "ds_crops_polygons_v1",
+      "name": "Crops expert polygons",
+      "kind": "dataset",
+      "type": "training",
+      "node": null,
+      "topology": null,
+      "classes": [
+        "crops"
+      ],
+      "extent_bbox": [
+        69.50128,
+        8.13829,
+        87.82965,
+        31.45308
+      ],
+      "accuracy": null,
+      "published": null,
+      "created": "2026-06-23T16:41:30.359159+00:00"
+    },
+    {
+      "id": "ds_master_alpha_full_v1",
+      "name": "Master Alpha Earth expert pixel table (4 base classes)",
+      "kind": "dataset",
+      "type": "training",
+      "node": null,
+      "topology": null,
+      "classes": [
+        "greenery",
+        "water",
+        "built_up",
+        "barren"
+      ],
+      "extent_bbox": [
+        68.0,
+        6.5,
+        97.5,
+        37.5
+      ],
+      "accuracy": null,
+      "published": null,
+      "created": "2026-06-23T16:41:24.247658+00:00"
+    },
+    {
+      "id": "ds_mining_polygons_v1",
+      "name": "mining expert polygons",
+      "kind": "dataset",
+      "type": "training",
+      "node": null,
+      "topology": null,
+      "classes": [
+        "mining"
+      ],
+      "extent_bbox": [
+        68.58471,
+        9.00493,
+        87.76123,
+        34.05857
+      ],
+      "accuracy": null,
+      "published": null,
+      "created": "2026-06-23T16:41:30.453044+00:00"
+    },
+    {
+      "id": "ds_trees_polygons_v1",
+      "name": "Trees expert polygons",
+      "kind": "dataset",
+      "type": "training",
+      "node": null,
+      "topology": null,
+      "classes": [
+        "trees"
+      ],
+      "extent_bbox": [
+        72.94958,
+        9.40333,
+        95.80036,
+        34.52493
+      ],
+      "accuracy": null,
+      "published": null,
+      "created": "2026-06-23T16:41:30.390870+00:00"
+    },
+    {
+      "id": "ds_water_extra_v1",
+      "name": "Extra water polygons",
+      "kind": "dataset",
+      "type": "training",
+      "node": null,
+      "topology": null,
+      "classes": [
+        "mixed"
+      ],
+      "extent_bbox": [
+        68.0,
+        6.5,
+        97.5,
+        37.5
+      ],
+      "accuracy": null,
+      "published": null,
+      "created": "2026-06-23T16:41:24.268573+00:00"
+    },
+    {
+      "id": "ds_worldcover_shrubs_v1",
+      "name": "ESA WorldCover slice (shrubs)",
+      "kind": "dataset",
+      "type": "training",
+      "node": null,
+      "topology": null,
+      "classes": [
+        "shrubs"
+      ],
+      "extent_bbox": [
+        68.0,
+        6.5,
+        97.5,
+        37.5
+      ],
+      "accuracy": null,
+      "published": null,
+      "created": "2026-06-23T16:41:30.402231+00:00"
+    },
+    {
+      "id": "ds_worldcover_train_v1",
+      "name": "ESA WorldCover random-India points",
+      "kind": "dataset",
+      "type": "training",
+      "node": null,
+      "topology": null,
+      "classes": [
+        "mixed"
+      ],
+      "extent_bbox": [
+        68.0,
+        6.5,
+        97.5,
+        37.5
+      ],
+      "accuracy": null,
+      "published": null,
+      "created": "2026-06-23T16:41:24.258194+00:00"
+    }
+  ],
+  "generated": "2026-06-23T16:42:48.169797+00:00"
+}
