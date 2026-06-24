@@ -1,0 +1,50 @@
+{
+  "id": "ds_non_tea_polygons_v1",
+  "name": "non_tea expert polygons",
+  "description": "User-marked example polygons for the 'non_tea' class.",
+  "type": "training",
+  "kind": "polygons",
+  "classes": [
+    {
+      "class": "non_tea",
+      "name": "non_tea",
+      "count": 64
+    }
+  ],
+  "definition": {
+    "type": "polygons",
+    "path": "data/examples/non_tea.geojson"
+  },
+  "extent": {
+    "spatial": {
+      "type": "bbox",
+      "value": [
+        94.87762,
+        27.1446,
+        96.05811,
+        27.81492
+      ]
+    },
+    "temporal": {
+      "year": 2024
+    }
+  },
+  "provenance": {
+    "annotator": "user contribution",
+    "method": "drawn/uploaded polygons",
+    "evidence": [],
+    "license": null,
+    "notes": "marked between 2026-06-24T03:14:35.057836+00:00 and 2026-06-24T03:14:35.061868+00:00"
+  },
+  "quality": {
+    "n_polygons": 64,
+    "occupied_cells": 13,
+    "spatial_diversity": 0.521,
+    "class_balance": {
+      "non_tea": 1.0
+    }
+  },
+  "version": 2,
+  "created": "2026-06-24T03:16:36.112374+00:00",
+  "updated": "2026-06-24T03:16:36.113015+00:00"
+}

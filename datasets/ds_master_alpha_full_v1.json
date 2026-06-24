@@ -49,9 +49,7 @@
   "provenance": {
     "annotator": "Core Stack (week-2 build)",
     "method": "expert polygons over ~200 diverse India tiles -> interior pixels",
-    "evidence": [
-      "pipeline.md"
-    ],
+    "evidence": [],
     "license": null
   },
   "version": 1,

@@ -1,25 +1,21 @@
 {
   "id": "mc_greenery_v1",
-  "name": "Greenery split (crops / shrubs / trees)",
+  "name": "Greenery split (non_tea / tea)",
   "node": "greenery",
   "parent_class": "root",
   "topology": "per_node_split",
   "produces": [
     {
-      "class": "crops"
+      "class": "non_tea"
     },
     {
-      "class": "shrubs"
-    },
-    {
-      "class": "trees"
+      "class": "tea"
     }
   ],
   "training": {
     "datasets": [
-      "ds_crops_polygons_v1",
-      "ds_trees_polygons_v1",
-      "ds_worldcover_shrubs_v1"
+      "ds_tea_polygons_v1",
+      "ds_non_tea_polygons_v1"
     ],
     "embedding": {
       "source": "alphaearth",
@@ -44,10 +40,10 @@
     "spatial": {
       "type": "bbox",
       "value": [
-        68.0,
-        6.5,
-        97.5,
-        37.5
+        94.83222,
+        27.1446,
+        96.05811,
+        27.81492
       ]
     },
     "temporal": {
@@ -56,27 +52,21 @@
   },
   "metrics": {
     "accuracy": 0.963,
-    "macro_f1": 0.884,
+    "macro_f1": 0.961,
     "eval": "polygon-holdout",
-    "n_test": 3014,
+    "n_test": 2150,
     "per_class": {
-      "crops": {
-        "precision": 0.987,
-        "recall": 0.943,
-        "f1": 0.965,
-        "support": 1500
+      "non_tea": {
+        "precision": 0.927,
+        "recall": 0.984,
+        "f1": 0.954,
+        "support": 850
       },
-      "shrubs": {
-        "precision": 0.548,
-        "recall": 0.947,
-        "f1": 0.695,
-        "support": 114
-      },
-      "trees": {
-        "precision": 0.997,
-        "recall": 0.986,
-        "f1": 0.991,
-        "support": 1400
+      "tea": {
+        "precision": 0.989,
+        "recall": 0.949,
+        "f1": 0.969,
+        "support": 1300
       }
     }
   },
@@ -94,7 +84,7 @@
     "derived_from": null
   },
   "about": {
-    "description": "Greenery split (crops / shrubs / trees)",
+    "description": "Greenery split (non_tea / tea)",
     "intended_use": "Layered on the India base map.",
     "limitations": "Linear model; rare-class recall limited.",
     "evidence": ""
@@ -104,7 +94,7 @@
     "valid_region_label": "India",
     "contributor": ""
   },
-  "version": 2,
-  "created": "2026-06-23T16:41:30.414020+00:00",
-  "updated": "2026-06-23T16:42:48.146367+00:00"
+  "version": 4,
+  "created": "2026-06-24T03:16:36.123364+00:00",
+  "updated": "2026-06-24T05:12:33.811891+00:00"
 }

@@ -24,26 +24,25 @@
     },
     {
       "id": "mc_greenery_v1",
-      "name": "Greenery split (crops / shrubs / trees)",
+      "name": "Greenery split (non_tea / tea)",
       "kind": "model",
       "type": null,
       "node": "greenery",
       "topology": "per_node_split",
       "classes": [
-        "crops",
-        "shrubs",
-        "trees"
+        "non_tea",
+        "tea"
       ],
       "extent_bbox": [
-        68.0,
-        6.5,
-        97.5,
-        37.5
+        94.83222,
+        27.1446,
+        96.05811,
+        27.81492
       ],
       "year": 2024,
       "accuracy": 0.963,
       "published": true,
-      "created": "2026-06-23T16:41:30.414020+00:00"
+      "created": "2026-06-24T03:16:36.123364+00:00"
     },
     {
       "id": "mc_root_v1",
@@ -155,6 +154,48 @@
       "created": "2026-06-23T16:41:30.453044+00:00"
     },
     {
+      "id": "ds_non_tea_polygons_v1",
+      "name": "non_tea expert polygons",
+      "kind": "dataset",
+      "type": "training",
+      "node": null,
+      "topology": null,
+      "classes": [
+        "non_tea"
+      ],
+      "extent_bbox": [
+        94.87762,
+        27.1446,
+        96.05811,
+        27.81492
+      ],
+      "year": 2024,
+      "accuracy": null,
+      "published": null,
+      "created": "2026-06-24T03:16:36.112374+00:00"
+    },
+    {
+      "id": "ds_tea_polygons_v1",
+      "name": "tea expert polygons",
+      "kind": "dataset",
+      "type": "training",
+      "node": null,
+      "topology": null,
+      "classes": [
+        "tea"
+      ],
+      "extent_bbox": [
+        94.83222,
+        27.18731,
+        95.9866,
+        27.75589
+      ],
+      "year": 2024,
+      "accuracy": null,
+      "published": null,
+      "created": "2026-06-24T03:16:36.093532+00:00"
+    },
+    {
       "id": "ds_trees_polygons_v1",
       "name": "Trees expert polygons",
       "kind": "dataset",
@@ -239,5 +280,5 @@
       "created": "2026-06-23T16:41:24.258194+00:00"
     }
   ],
-  "generated": "2026-06-23T19:29:58.524210+00:00"
+  "generated": "2026-06-24T05:12:33.832344+00:00"
 }
