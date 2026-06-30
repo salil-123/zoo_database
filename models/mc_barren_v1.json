@@ -14,7 +14,6 @@
   ],
   "training": {
     "datasets": [
-      "ds_master_alpha_full_v1",
       "ds_mining_polygons_v1"
     ],
     "embedding": {
@@ -40,10 +39,10 @@
     "spatial": {
       "type": "bbox",
       "value": [
-        68.0,
-        6.5,
-        97.5,
-        37.5
+        68.58471,
+        9.00493,
+        87.76123,
+        34.05857
       ]
     },
     "temporal": {
@@ -72,7 +71,8 @@
   },
   "artifact": {
     "path": "data/refine/barren.joblib",
-    "format": "sklearn-joblib"
+    "format": "sklearn-joblib",
+    "published_path": "artifacts/mc_barren_v1.joblib"
   },
   "deployment": {
     "ee_asset": null,
@@ -94,7 +94,7 @@
     "valid_region_label": "India",
     "contributor": ""
   },
-  "version": 3,
-  "created": "2026-06-23T16:41:30.466253+00:00",
-  "updated": "2026-06-24T05:13:30.720551+00:00"
+  "version": 5,
+  "created": "2026-06-29T08:19:36.691273+00:00",
+  "updated": "2026-06-30T16:47:09.560337+00:00"
 }

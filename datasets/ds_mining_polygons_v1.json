@@ -1,13 +1,13 @@
 {
   "id": "ds_mining_polygons_v1",
-  "name": "mining expert polygons",
-  "description": "User-marked example polygons for the 'mining' class.",
+  "name": "Mining expert polygons",
+  "description": "User-marked example polygons for the 'Mining' class.",
   "type": "training",
   "kind": "polygons",
   "classes": [
     {
       "class": "mining",
-      "name": "mining",
+      "name": "Mining",
       "count": 100
     }
   ],
@@ -44,6 +44,7 @@
       "mining": 1.0
     }
   },
-  "version": 1,
-  "created": "2026-06-23T16:41:30.453044+00:00"
+  "version": 2,
+  "created": "2026-06-29T08:19:36.675931+00:00",
+  "updated": "2026-06-29T08:19:36.676670+00:00"
 }

@@ -12,15 +12,15 @@
         "mining"
       ],
       "extent_bbox": [
-        68.0,
-        6.5,
-        97.5,
-        37.5
+        68.58471,
+        9.00493,
+        87.76123,
+        34.05857
       ],
       "year": 2024,
       "accuracy": 0.867,
       "published": true,
-      "created": "2026-06-23T16:41:30.466253+00:00"
+      "created": "2026-06-29T08:19:36.691273+00:00"
     },
     {
       "id": "mc_greenery_v1",
@@ -42,7 +42,7 @@
       "year": 2024,
       "accuracy": 0.963,
       "published": true,
-      "created": "2026-06-24T05:19:36.825581+00:00"
+      "created": "2026-06-29T08:19:36.623910+00:00"
     },
     {
       "id": "mc_root_v1",
@@ -66,7 +66,34 @@
       "year": 2024,
       "accuracy": 0.8,
       "published": true,
-      "created": "2026-06-23T16:41:30.186231+00:00"
+      "created": "2026-06-29T08:19:35.867181+00:00"
+    },
+    {
+      "id": "mc_worldcover_base_v1",
+      "name": "WorldCover effective base \u2014 7-class LULC (India)",
+      "kind": "model",
+      "type": null,
+      "node": "root",
+      "topology": "base_pooled",
+      "classes": [
+        "bare",
+        "built_up",
+        "cropland",
+        "grassland",
+        "shrubland",
+        "tree",
+        "water"
+      ],
+      "extent_bbox": [
+        68.0,
+        6.5,
+        97.5,
+        37.5
+      ],
+      "year": 2024,
+      "accuracy": null,
+      "published": true,
+      "created": "2026-06-29T08:19:35.888107+00:00"
     },
     {
       "id": "ds_alphaearth_annual_v1",
@@ -134,7 +161,7 @@
     },
     {
       "id": "ds_mining_polygons_v1",
-      "name": "mining expert polygons",
+      "name": "Mining expert polygons",
       "kind": "dataset",
       "type": "training",
       "node": null,
@@ -151,7 +178,7 @@
       "year": 2024,
       "accuracy": null,
       "published": null,
-      "created": "2026-06-23T16:41:30.453044+00:00"
+      "created": "2026-06-29T08:19:36.675931+00:00"
     },
     {
       "id": "ds_non_tea_polygons_v1",
@@ -172,7 +199,7 @@
       "year": 2024,
       "accuracy": null,
       "published": null,
-      "created": "2026-06-24T05:19:36.797508+00:00"
+      "created": "2026-06-29T08:19:36.609794+00:00"
     },
     {
       "id": "ds_tea_polygons_v1",
@@ -193,7 +220,7 @@
       "year": 2024,
       "accuracy": null,
       "published": null,
-      "created": "2026-06-24T05:19:36.764928+00:00"
+      "created": "2026-06-29T08:19:36.580453+00:00"
     },
     {
       "id": "ds_trees_polygons_v1",
@@ -280,5 +307,5 @@
       "created": "2026-06-23T16:41:24.258194+00:00"
     }
   ],
-  "generated": "2026-06-24T05:19:57.931852+00:00"
+  "generated": "2026-06-30T16:47:09.725324+00:00"
 }

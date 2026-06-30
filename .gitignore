@@ -1,4 +1,5 @@
-# only the JSON cards + index live in the zoo; nothing else
-*.joblib
+# zoo = JSON cards + index + published model artifacts; nothing else
 *.csv
 *.npy
+*.joblib
+!artifacts/*.joblib

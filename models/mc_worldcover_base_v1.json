@@ -1,18 +1,28 @@
 {
-  "id": "mc_root_v1",
-  "name": "Core Stack base map \u2014 4-class LULC (India)",
+  "id": "mc_worldcover_base_v1",
+  "name": "WorldCover effective base \u2014 7-class LULC (India)",
   "node": "root",
   "parent_class": null,
   "topology": "base_pooled",
+  "base_scheme": "worldcover",
   "produces": [
     {
-      "class": "barren"
+      "class": "bare"
     },
     {
       "class": "built_up"
     },
     {
-      "class": "greenery"
+      "class": "cropland"
+    },
+    {
+      "class": "grassland"
+    },
+    {
+      "class": "shrubland"
+    },
+    {
+      "class": "tree"
     },
     {
       "class": "water"
@@ -20,19 +30,16 @@
   ],
   "training": {
     "datasets": [
-      "ds_master_alpha_full_v1",
-      "ds_worldcover_train_v1",
-      "ds_water_extra_v1"
+      "ds_worldcover_train_v1"
     ],
     "embedding": {
       "source": "alphaearth",
       "dim": 64
     },
     "algo": "StandardScaler->LinearSVC",
-    "class_weight": null,
+    "class_weight": "balanced",
     "balancing": {
-      "method": "worldcover_upweight",
-      "wc_weight": 2.0
+      "method": "class_weight_balanced"
     }
   },
   "inference": {
@@ -58,18 +65,12 @@
     }
   },
   "metrics": {
-    "accuracy": 0.8,
-    "eval": "random India (real-world mix)",
-    "secondary": {
-      "accuracy": 0.89,
-      "eval": "balanced expert hold-out"
-    },
-    "note": "greenery near-perfect; rare classes are the hard part"
+    "note": "weak ESA WorldCover labels; trails the IndiaSAT base. An alternate starting scheme, not a more accurate one."
   },
   "artifact": {
-    "path": "data/model_pooled.joblib",
+    "path": "data/model_worldcover_base.joblib",
     "format": "sklearn-joblib",
-    "published_path": "artifacts/mc_root_v1.joblib"
+    "published_path": "artifacts/mc_worldcover_base_v1.joblib"
   },
   "deployment": {
     "ee_asset": null,
@@ -81,9 +82,9 @@
     "derived_from": null
   },
   "about": {
-    "description": "Core Stack base map \u2014 4-class LULC (India)",
-    "intended_use": "Coarse 4-class LULC across India at 10 m.",
-    "limitations": "Linear model; rare-class recall limited.",
+    "description": "Effective WorldCover base: the well-supported India classes (tree, shrubland, grassland, cropland, built-up, bare, water) learned from Alpha Earth embeddings.",
+    "intended_use": "An alternate starting scheme to IndiaSAT's four classes.",
+    "limitations": "Weak ESA WorldCover labels; rare classes dropped for lack of India support.",
     "evidence": ""
   },
   "zoo": {
@@ -92,7 +93,6 @@
     "contributor": ""
   },
   "version": 4,
-  "created": "2026-06-29T08:19:35.867181+00:00",
-  "base_scheme": "indiasat",
-  "updated": "2026-06-30T16:47:09.680536+00:00"
+  "created": "2026-06-29T08:19:35.888107+00:00",
+  "updated": "2026-06-30T16:47:09.712023+00:00"
 }

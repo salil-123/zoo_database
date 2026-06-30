@@ -72,7 +72,8 @@
   },
   "artifact": {
     "path": "data/refine/greenery.joblib",
-    "format": "sklearn-joblib"
+    "format": "sklearn-joblib",
+    "published_path": "artifacts/mc_greenery_v1.joblib"
   },
   "deployment": {
     "ee_asset": null,
@@ -94,7 +95,7 @@
     "valid_region_label": "India",
     "contributor": ""
   },
-  "version": 6,
-  "created": "2026-06-24T05:19:36.825581+00:00",
-  "updated": "2026-06-24T05:19:57.904907+00:00"
+  "version": 8,
+  "created": "2026-06-29T08:19:36.623910+00:00",
+  "updated": "2026-06-30T16:47:09.659440+00:00"
 }
