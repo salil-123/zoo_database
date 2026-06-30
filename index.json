@@ -42,7 +42,7 @@
       "year": 2024,
       "accuracy": 0.963,
       "published": true,
-      "created": "2026-06-29T08:19:36.623910+00:00"
+      "created": "2026-06-30T17:13:18.801126+00:00"
     },
     {
       "id": "mc_root_v1",
@@ -66,7 +66,7 @@
       "year": 2024,
       "accuracy": 0.8,
       "published": true,
-      "created": "2026-06-29T08:19:35.867181+00:00"
+      "created": "2026-06-30T17:13:18.597514+00:00"
     },
     {
       "id": "mc_worldcover_base_v1",
@@ -93,7 +93,7 @@
       "year": 2024,
       "accuracy": null,
       "published": true,
-      "created": "2026-06-29T08:19:35.888107+00:00"
+      "created": "2026-06-30T17:13:18.619598+00:00"
     },
     {
       "id": "ds_alphaearth_annual_v1",
@@ -182,7 +182,7 @@
     },
     {
       "id": "ds_non_tea_polygons_v1",
-      "name": "non_tea expert polygons",
+      "name": "Non Tea expert polygons",
       "kind": "dataset",
       "type": "training",
       "node": null,
@@ -199,11 +199,11 @@
       "year": 2024,
       "accuracy": null,
       "published": null,
-      "created": "2026-06-29T08:19:36.609794+00:00"
+      "created": "2026-06-30T17:13:18.759116+00:00"
     },
     {
       "id": "ds_tea_polygons_v1",
-      "name": "tea expert polygons",
+      "name": "Tea expert polygons",
       "kind": "dataset",
       "type": "training",
       "node": null,
@@ -220,7 +220,7 @@
       "year": 2024,
       "accuracy": null,
       "published": null,
-      "created": "2026-06-29T08:19:36.580453+00:00"
+      "created": "2026-06-30T17:13:18.787345+00:00"
     },
     {
       "id": "ds_trees_polygons_v1",
@@ -307,5 +307,5 @@
       "created": "2026-06-23T16:41:24.258194+00:00"
     }
   ],
-  "generated": "2026-06-30T16:47:09.725324+00:00"
+  "generated": "2026-06-30T17:31:17.296408+00:00"
 }

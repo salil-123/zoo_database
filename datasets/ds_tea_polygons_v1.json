@@ -1,13 +1,13 @@
 {
   "id": "ds_tea_polygons_v1",
-  "name": "tea expert polygons",
-  "description": "User-marked example polygons for the 'tea' class.",
+  "name": "Tea expert polygons",
+  "description": "User-marked example polygons for the 'Tea' class.",
   "type": "training",
   "kind": "polygons",
   "classes": [
     {
       "class": "tea",
-      "name": "tea",
+      "name": "Tea",
       "count": 105
     }
   ],
@@ -34,7 +34,8 @@
     "method": "drawn/uploaded polygons",
     "evidence": [],
     "license": null,
-    "notes": "marked between 2026-06-24T03:14:23.327074+00:00 and 2026-06-24T03:14:23.337539+00:00"
+    "notes": "marked between 2026-06-24T03:14:23.327074+00:00 and 2026-06-24T03:14:23.337539+00:00",
+    "source_url": ""
   },
   "quality": {
     "n_polygons": 105,
@@ -44,7 +45,8 @@
       "tea": 1.0
     }
   },
-  "version": 4,
-  "created": "2026-06-29T08:19:36.580453+00:00",
-  "updated": "2026-06-29T08:19:36.581656+00:00"
+  "version": 7,
+  "created": "2026-06-30T17:13:18.787345+00:00",
+  "updated": "2026-06-30T17:13:35.555700+00:00",
+  "source_url": ""
 }

@@ -14,8 +14,8 @@
   ],
   "training": {
     "datasets": [
-      "ds_tea_polygons_v1",
-      "ds_non_tea_polygons_v1"
+      "ds_non_tea_polygons_v1",
+      "ds_tea_polygons_v1"
     ],
     "embedding": {
       "source": "alphaearth",
@@ -95,7 +95,7 @@
     "valid_region_label": "India",
     "contributor": ""
   },
-  "version": 8,
-  "created": "2026-06-29T08:19:36.623910+00:00",
-  "updated": "2026-06-30T16:47:09.659440+00:00"
+  "version": 10,
+  "created": "2026-06-30T17:13:18.801126+00:00",
+  "updated": "2026-06-30T17:31:17.228074+00:00"
 }

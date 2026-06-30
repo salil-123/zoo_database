@@ -1,13 +1,13 @@
 {
   "id": "ds_non_tea_polygons_v1",
-  "name": "non_tea expert polygons",
-  "description": "User-marked example polygons for the 'non_tea' class.",
+  "name": "Non Tea expert polygons",
+  "description": "User-marked example polygons for the 'Non Tea' class.",
   "type": "training",
   "kind": "polygons",
   "classes": [
     {
       "class": "non_tea",
-      "name": "non_tea",
+      "name": "Non Tea",
       "count": 64
     }
   ],
@@ -44,7 +44,7 @@
       "non_tea": 1.0
     }
   },
-  "version": 4,
-  "created": "2026-06-29T08:19:36.609794+00:00",
-  "updated": "2026-06-29T08:19:36.610514+00:00"
+  "version": 5,
+  "created": "2026-06-30T17:13:18.759116+00:00",
+  "updated": "2026-06-30T17:13:18.759947+00:00"
 }
