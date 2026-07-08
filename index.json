@@ -24,25 +24,25 @@
     },
     {
       "id": "mc_greenery_v1",
-      "name": "Greenery split (non_tea / tea)",
+      "name": "Greenery split (acacia / non_acacia)",
       "kind": "model",
       "type": null,
       "node": "greenery",
       "topology": "per_node_split",
       "classes": [
-        "non_tea",
-        "tea"
+        "acacia",
+        "non_acacia"
       ],
       "extent_bbox": [
-        94.83222,
-        27.1446,
-        96.05811,
-        27.81492
+        77.17308,
+        28.52783,
+        77.20058,
+        28.54642
       ],
       "year": 2024,
-      "accuracy": 0.963,
+      "accuracy": 0.703,
       "published": true,
-      "created": "2026-06-30T17:13:18.801126+00:00"
+      "created": "2026-07-08T02:39:40.789684+00:00"
     },
     {
       "id": "mc_root_v1",
@@ -70,7 +70,7 @@
     },
     {
       "id": "mc_worldcover_base_v1",
-      "name": "WorldCover effective base \u2014 7-class LULC (India)",
+      "name": "WorldCover base \u2014 7-class LULC (India)",
       "kind": "model",
       "type": null,
       "node": "root",
@@ -94,6 +94,27 @@
       "accuracy": null,
       "published": true,
       "created": "2026-06-30T17:13:18.619598+00:00"
+    },
+    {
+      "id": "ds_acacia_polygons_v1",
+      "name": "acacia expert polygons",
+      "kind": "dataset",
+      "type": "training",
+      "node": null,
+      "topology": null,
+      "classes": [
+        "acacia"
+      ],
+      "extent_bbox": [
+        77.17308,
+        28.52783,
+        77.1976,
+        28.54328
+      ],
+      "year": 2024,
+      "accuracy": null,
+      "published": null,
+      "created": "2026-07-08T02:39:40.720338+00:00"
     },
     {
       "id": "ds_alphaearth_annual_v1",
@@ -179,6 +200,27 @@
       "accuracy": null,
       "published": null,
       "created": "2026-06-29T08:19:36.675931+00:00"
+    },
+    {
+      "id": "ds_non_acacia_polygons_v1",
+      "name": "non-acacia expert polygons",
+      "kind": "dataset",
+      "type": "training",
+      "node": null,
+      "topology": null,
+      "classes": [
+        "non_acacia"
+      ],
+      "extent_bbox": [
+        77.17311,
+        28.52785,
+        77.20058,
+        28.54642
+      ],
+      "year": 2024,
+      "accuracy": null,
+      "published": null,
+      "created": "2026-07-08T02:39:40.772062+00:00"
     },
     {
       "id": "ds_non_tea_polygons_v1",
@@ -307,5 +349,5 @@
       "created": "2026-06-23T16:41:24.258194+00:00"
     }
   ],
-  "generated": "2026-06-30T17:31:17.296408+00:00"
+  "generated": "2026-07-08T02:43:19.566120+00:00"
 }

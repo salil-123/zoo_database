@@ -1,6 +1,6 @@
 {
   "id": "mc_worldcover_base_v1",
-  "name": "WorldCover effective base \u2014 7-class LULC (India)",
+  "name": "WorldCover base \u2014 7-class LULC (India)",
   "node": "root",
   "parent_class": null,
   "topology": "base_pooled",
@@ -82,7 +82,7 @@
     "derived_from": null
   },
   "about": {
-    "description": "Effective WorldCover base: the well-supported India classes (tree, shrubland, grassland, cropland, built-up, bare, water) learned from Alpha Earth embeddings.",
+    "description": "WorldCover base: the well-supported India classes (tree, shrubland, grassland, cropland, built-up, bare, water) learned from Alpha Earth embeddings.",
     "intended_use": "An alternate starting scheme to IndiaSAT's four classes.",
     "limitations": "Weak ESA WorldCover labels; rare classes dropped for lack of India support.",
     "evidence": ""
