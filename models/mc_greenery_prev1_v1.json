@@ -1,6 +1,6 @@
 {
-  "id": "mc_greenery_v1",
-  "name": "Greenery split (acacia / non_acacia) [years 2019, 2021, 2023]",
+  "id": "mc_greenery_prev1_v1",
+  "name": "Greenery split (acacia / non_acacia) \u2014 superseded",
   "node": "greenery",
   "parent_class": "root",
   "topology": "per_node_split",
@@ -50,11 +50,30 @@
       "year": 2024
     }
   },
-  "metrics": {},
+  "metrics": {
+    "accuracy": 0.703,
+    "macro_f1": 0.694,
+    "eval": "polygon-holdout",
+    "n_test": 11400,
+    "per_class": {
+      "acacia": {
+        "precision": 0.545,
+        "recall": 0.787,
+        "f1": 0.644,
+        "support": 3900
+      },
+      "non_acacia": {
+        "precision": 0.856,
+        "recall": 0.659,
+        "f1": 0.745,
+        "support": 7500
+      }
+    }
+  },
   "artifact": {
-    "path": "data/refine/greenery.joblib",
+    "path": "data/refine/archive/greenery__1783480495.joblib",
     "format": "sklearn-joblib",
-    "published_path": "artifacts/mc_greenery_v1.joblib"
+    "published_path": "artifacts/mc_greenery_prev1_v1.joblib"
   },
   "deployment": {
     "ee_asset": null,
@@ -63,12 +82,12 @@
   },
   "lineage": {
     "base_model": "mc_root_v1",
-    "derived_from": null
+    "derived_from": "mc_greenery_v1"
   },
   "about": {
-    "description": "Greenery split (acacia / non_acacia) [years 2019, 2021, 2023]",
+    "description": "A previous greenery split, kept after a newer model replaced it so it isn't lost.",
     "intended_use": "Layered on the India base map.",
-    "limitations": "Linear model; rare-class recall limited.",
+    "limitations": "Archived reference model, not the live classifier for this node.",
     "evidence": ""
   },
   "zoo": {
@@ -76,7 +95,7 @@
     "valid_region_label": "India",
     "contributor": ""
   },
-  "version": 14,
-  "created": "2026-07-08T03:14:56.663632+00:00",
-  "updated": "2026-07-08T04:32:26.496893+00:00"
+  "version": 13,
+  "updated": "2026-07-08T04:32:26.305380+00:00",
+  "created": null
 }

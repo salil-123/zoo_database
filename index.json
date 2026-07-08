@@ -23,8 +23,8 @@
       "created": "2026-06-29T08:19:36.691273+00:00"
     },
     {
-      "id": "mc_greenery_v1",
-      "name": "Greenery split (acacia / non_acacia)",
+      "id": "mc_greenery_prev1_v1",
+      "name": "Greenery split (acacia / non_acacia) \u2014 superseded",
       "kind": "model",
       "type": null,
       "node": "greenery",
@@ -42,7 +42,29 @@
       "year": 2024,
       "accuracy": 0.703,
       "published": true,
-      "created": "2026-07-08T02:39:40.789684+00:00"
+      "created": null
+    },
+    {
+      "id": "mc_greenery_v1",
+      "name": "Greenery split (acacia / non_acacia) [years 2019, 2021, 2023]",
+      "kind": "model",
+      "type": null,
+      "node": "greenery",
+      "topology": "per_node_split",
+      "classes": [
+        "acacia",
+        "non_acacia"
+      ],
+      "extent_bbox": [
+        77.17308,
+        28.52783,
+        77.20058,
+        28.54642
+      ],
+      "year": 2024,
+      "accuracy": null,
+      "published": true,
+      "created": "2026-07-08T03:14:56.663632+00:00"
     },
     {
       "id": "mc_root_v1",
@@ -114,7 +136,7 @@
       "year": 2024,
       "accuracy": null,
       "published": null,
-      "created": "2026-07-08T02:39:40.720338+00:00"
+      "created": "2026-07-08T03:14:56.609981+00:00"
     },
     {
       "id": "ds_alphaearth_annual_v1",
@@ -220,7 +242,7 @@
       "year": 2024,
       "accuracy": null,
       "published": null,
-      "created": "2026-07-08T02:39:40.772062+00:00"
+      "created": "2026-07-08T03:14:56.649208+00:00"
     },
     {
       "id": "ds_non_tea_polygons_v1",
@@ -349,5 +371,5 @@
       "created": "2026-06-23T16:41:24.258194+00:00"
     }
   ],
-  "generated": "2026-07-08T02:43:19.566120+00:00"
+  "generated": "2026-07-08T04:32:26.522326+00:00"
 }
