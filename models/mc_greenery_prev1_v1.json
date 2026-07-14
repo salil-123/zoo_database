@@ -1,21 +1,21 @@
 {
   "id": "mc_greenery_prev1_v1",
-  "name": "Greenery split (acacia / non_acacia) \u2014 superseded",
+  "name": "Greenery split (non_tea / tea) \u2014 superseded",
   "node": "greenery",
   "parent_class": "root",
   "topology": "per_node_split",
   "produces": [
     {
-      "class": "acacia"
+      "class": "non_tea"
     },
     {
-      "class": "non_acacia"
+      "class": "tea"
     }
   ],
   "training": {
     "datasets": [
-      "ds_acacia_polygons_v1",
-      "ds_non_acacia_polygons_v1"
+      "ds_tea_polygons_v1",
+      "ds_non_tea_polygons_v1"
     ],
     "embedding": {
       "source": "alphaearth",
@@ -40,10 +40,10 @@
     "spatial": {
       "type": "bbox",
       "value": [
-        77.17308,
-        28.52783,
-        77.20058,
-        28.54642
+        94.83222,
+        27.1446,
+        96.05811,
+        27.81492
       ]
     },
     "temporal": {
@@ -51,27 +51,27 @@
     }
   },
   "metrics": {
-    "accuracy": 0.703,
-    "macro_f1": 0.694,
+    "accuracy": 0.963,
+    "macro_f1": 0.961,
     "eval": "polygon-holdout",
-    "n_test": 11400,
+    "n_test": 2150,
     "per_class": {
-      "acacia": {
-        "precision": 0.545,
-        "recall": 0.787,
-        "f1": 0.644,
-        "support": 3900
+      "non_tea": {
+        "precision": 0.927,
+        "recall": 0.984,
+        "f1": 0.954,
+        "support": 850
       },
-      "non_acacia": {
-        "precision": 0.856,
-        "recall": 0.659,
-        "f1": 0.745,
-        "support": 7500
+      "tea": {
+        "precision": 0.989,
+        "recall": 0.949,
+        "f1": 0.969,
+        "support": 1300
       }
     }
   },
   "artifact": {
-    "path": "data/refine/archive/greenery__1783480495.joblib",
+    "path": "data/refine/archive/greenery__1784043692.joblib",
     "format": "sklearn-joblib",
     "published_path": "artifacts/mc_greenery_prev1_v1.joblib"
   },
@@ -95,7 +95,7 @@
     "valid_region_label": "India",
     "contributor": ""
   },
-  "version": 13,
-  "updated": "2026-07-08T04:32:26.305380+00:00",
+  "version": 16,
+  "updated": "2026-07-14T16:07:52.548659+00:00",
   "created": null
 }

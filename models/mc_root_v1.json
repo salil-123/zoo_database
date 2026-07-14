@@ -15,15 +15,14 @@
       "class": "greenery"
     },
     {
+      "class": "other"
+    },
+    {
       "class": "water"
     }
   ],
   "training": {
-    "datasets": [
-      "ds_master_alpha_full_v1",
-      "ds_worldcover_train_v1",
-      "ds_water_extra_v1"
-    ],
+    "datasets": [],
     "embedding": {
       "source": "alphaearth",
       "dim": 64
@@ -91,8 +90,8 @@
     "valid_region_label": "India",
     "contributor": ""
   },
-  "version": 6,
-  "created": "2026-06-30T17:13:18.597514+00:00",
+  "version": 8,
+  "created": "2026-07-12T20:48:44.102544+00:00",
   "base_scheme": "indiasat",
-  "updated": "2026-06-30T17:31:17.257813+00:00"
+  "updated": "2026-07-14T16:07:52.578282+00:00"
 }

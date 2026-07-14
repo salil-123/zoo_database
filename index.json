@@ -24,7 +24,29 @@
     },
     {
       "id": "mc_greenery_prev1_v1",
-      "name": "Greenery split (acacia / non_acacia) \u2014 superseded",
+      "name": "Greenery split (non_tea / tea) \u2014 superseded",
+      "kind": "model",
+      "type": null,
+      "node": "greenery",
+      "topology": "per_node_split",
+      "classes": [
+        "non_tea",
+        "tea"
+      ],
+      "extent_bbox": [
+        94.83222,
+        27.1446,
+        96.05811,
+        27.81492
+      ],
+      "year": 2024,
+      "accuracy": 0.963,
+      "published": true,
+      "created": null
+    },
+    {
+      "id": "mc_greenery_v1",
+      "name": "Greenery split (acacia / non_acacia)",
       "kind": "model",
       "type": null,
       "node": "greenery",
@@ -42,29 +64,7 @@
       "year": 2024,
       "accuracy": 0.703,
       "published": true,
-      "created": null
-    },
-    {
-      "id": "mc_greenery_v1",
-      "name": "Greenery split (acacia / non_acacia) [years 2019, 2021, 2023]",
-      "kind": "model",
-      "type": null,
-      "node": "greenery",
-      "topology": "per_node_split",
-      "classes": [
-        "acacia",
-        "non_acacia"
-      ],
-      "extent_bbox": [
-        77.17308,
-        28.52783,
-        77.20058,
-        28.54642
-      ],
-      "year": 2024,
-      "accuracy": null,
-      "published": true,
-      "created": "2026-07-08T03:14:56.663632+00:00"
+      "created": "2026-07-14T16:04:28.354140+00:00"
     },
     {
       "id": "mc_root_v1",
@@ -77,6 +77,7 @@
         "barren",
         "built_up",
         "greenery",
+        "other",
         "water"
       ],
       "extent_bbox": [
@@ -88,7 +89,7 @@
       "year": 2024,
       "accuracy": 0.8,
       "published": true,
-      "created": "2026-06-30T17:13:18.597514+00:00"
+      "created": "2026-07-12T20:48:44.102544+00:00"
     },
     {
       "id": "mc_worldcover_base_v1",
@@ -136,7 +137,7 @@
       "year": 2024,
       "accuracy": null,
       "published": null,
-      "created": "2026-07-08T03:14:56.609981+00:00"
+      "created": "2026-07-14T16:04:28.304723+00:00"
     },
     {
       "id": "ds_alphaearth_annual_v1",
@@ -242,7 +243,7 @@
       "year": 2024,
       "accuracy": null,
       "published": null,
-      "created": "2026-07-08T03:14:56.649208+00:00"
+      "created": "2026-07-14T16:04:28.339235+00:00"
     },
     {
       "id": "ds_non_tea_polygons_v1",
@@ -263,7 +264,7 @@
       "year": 2024,
       "accuracy": null,
       "published": null,
-      "created": "2026-06-30T17:13:18.759116+00:00"
+      "created": "2026-07-14T15:41:32.827009+00:00"
     },
     {
       "id": "ds_tea_polygons_v1",
@@ -284,7 +285,7 @@
       "year": 2024,
       "accuracy": null,
       "published": null,
-      "created": "2026-06-30T17:13:18.787345+00:00"
+      "created": "2026-07-14T15:41:32.805339+00:00"
     },
     {
       "id": "ds_trees_polygons_v1",
@@ -371,5 +372,5 @@
       "created": "2026-06-23T16:41:24.258194+00:00"
     }
   ],
-  "generated": "2026-07-08T04:32:26.522326+00:00"
+  "generated": "2026-07-14T16:07:52.590942+00:00"
 }
