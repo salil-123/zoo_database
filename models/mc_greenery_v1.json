@@ -1,6 +1,6 @@
 {
   "id": "mc_greenery_v1",
-  "name": "Greenery split (acacia / non_acacia)",
+  "name": "Greenery split (acacia / non_acacia) [years 2019, 2021, 2023]",
   "node": "greenery",
   "parent_class": "root",
   "topology": "per_node_split",
@@ -51,24 +51,9 @@
     }
   },
   "metrics": {
-    "accuracy": 0.703,
-    "macro_f1": 0.694,
-    "eval": "polygon-holdout",
-    "n_test": 11400,
-    "per_class": {
-      "acacia": {
-        "precision": 0.545,
-        "recall": 0.787,
-        "f1": 0.644,
-        "support": 3900
-      },
-      "non_acacia": {
-        "precision": 0.856,
-        "recall": 0.659,
-        "f1": 0.745,
-        "support": 7500
-      }
-    }
+    "accuracy": 0.745,
+    "eval": "held-out unseen years 2020/2024 (multi-year pooled 2019/2021/2023)",
+    "per_class": {}
   },
   "artifact": {
     "path": "data/refine/greenery.joblib",
@@ -85,17 +70,17 @@
     "derived_from": null
   },
   "about": {
-    "description": "Greenery split (acacia / non_acacia)",
-    "intended_use": "Layered on the India base map.",
+    "description": "Greenery split (acacia / non_acacia), pooled over 2019/2021/2023 for temporal robustness \u2014 the week-7 multi-year model.",
+    "intended_use": "Acacia detection that holds up across years, not just the training year.",
     "limitations": "Linear model; rare-class recall limited.",
-    "evidence": ""
+    "evidence": "week7/acacia_multiyear.log"
   },
   "zoo": {
     "published": true,
     "valid_region_label": "India",
     "contributor": ""
   },
-  "version": 16,
-  "created": "2026-07-14T16:04:28.354140+00:00",
-  "updated": "2026-07-14T16:07:52.563857+00:00"
+  "version": 20,
+  "created": "2026-07-14T16:16:04.944164+00:00",
+  "updated": "2026-07-14T16:28:19.863550+00:00"
 }
