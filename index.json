@@ -11,6 +11,19 @@
         "barren_other",
         "mining"
       ],
+      "std_classes": [
+        {
+          "class": "barren_other",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "mining",
+          "std": null,
+          "scheme": null
+        }
+      ],
+      "used_by_count": null,
       "extent_bbox": [
         68.58471,
         9.00493,
@@ -33,6 +46,19 @@
         "non_tea",
         "tea"
       ],
+      "std_classes": [
+        {
+          "class": "non_tea",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "tea",
+          "std": null,
+          "scheme": null
+        }
+      ],
+      "used_by_count": null,
       "extent_bbox": [
         94.83222,
         27.1446,
@@ -45,8 +71,43 @@
       "created": "2026-07-14T16:17:44.506619+00:00"
     },
     {
+      "id": "mc_greenery_rule_v1",
+      "name": "Rule split: greenery (dense_veg / sparse_veg)",
+      "kind": "model",
+      "type": null,
+      "node": "greenery",
+      "topology": "rule_split",
+      "classes": [
+        "dense_veg",
+        "sparse_veg"
+      ],
+      "std_classes": [
+        {
+          "class": "dense_veg",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "sparse_veg",
+          "std": null,
+          "scheme": null
+        }
+      ],
+      "used_by_count": null,
+      "extent_bbox": [
+        68.0,
+        6.5,
+        97.5,
+        37.5
+      ],
+      "year": 2024,
+      "accuracy": null,
+      "published": false,
+      "created": "2026-07-22T01:09:55.471448+00:00"
+    },
+    {
       "id": "mc_greenery_v1",
-      "name": "Greenery split (acacia / non_acacia) [years 2019, 2021, 2023]",
+      "name": "Greenery split (acacia / non_acacia)",
       "kind": "model",
       "type": null,
       "node": "greenery",
@@ -55,6 +116,19 @@
         "acacia",
         "non_acacia"
       ],
+      "std_classes": [
+        {
+          "class": "acacia",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "non_acacia",
+          "std": null,
+          "scheme": null
+        }
+      ],
+      "used_by_count": null,
       "extent_bbox": [
         77.17308,
         28.52783,
@@ -62,9 +136,9 @@
         28.54642
       ],
       "year": 2024,
-      "accuracy": 0.745,
+      "accuracy": 0.728,
       "published": true,
-      "created": "2026-07-14T16:16:04.944164+00:00"
+      "created": "2026-07-15T03:50:58.993058+00:00"
     },
     {
       "id": "mc_root_v1",
@@ -80,6 +154,34 @@
         "other",
         "water"
       ],
+      "std_classes": [
+        {
+          "class": "barren",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "built_up",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "greenery",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "other",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "water",
+          "std": null,
+          "scheme": null
+        }
+      ],
+      "used_by_count": null,
       "extent_bbox": [
         68.0,
         6.5,
@@ -90,6 +192,41 @@
       "accuracy": 0.8,
       "published": true,
       "created": "2026-07-12T20:48:44.102544+00:00"
+    },
+    {
+      "id": "mc_water_fortnight_v1",
+      "name": "Seasonal water (per-fortnight, Sentinel-1/2)",
+      "kind": "model",
+      "type": null,
+      "node": "water_fortnight",
+      "topology": "flat_multiclass",
+      "classes": [
+        "non_water",
+        "water"
+      ],
+      "std_classes": [
+        {
+          "class": "non_water",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "water",
+          "std": null,
+          "scheme": null
+        }
+      ],
+      "used_by_count": null,
+      "extent_bbox": [
+        69.66116619986512,
+        9.50330820746074,
+        91.59197012337486,
+        31.27444376154062
+      ],
+      "year": null,
+      "accuracy": 0.9178885630498533,
+      "published": true,
+      "created": "2026-07-21T15:24:28.843488+00:00"
     },
     {
       "id": "mc_worldcover_base_v1",
@@ -107,6 +244,44 @@
         "tree",
         "water"
       ],
+      "std_classes": [
+        {
+          "class": "bare",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "built_up",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "cropland",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "grassland",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "shrubland",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "tree",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "water",
+          "std": null,
+          "scheme": null
+        }
+      ],
+      "used_by_count": null,
       "extent_bbox": [
         68.0,
         6.5,
@@ -128,16 +303,18 @@
       "classes": [
         "acacia"
       ],
+      "std_classes": null,
+      "used_by_count": 1,
       "extent_bbox": [
-        77.17308,
-        28.52783,
-        77.20058,
-        28.54642
+        68.58471,
+        9.00493,
+        87.76123,
+        34.05857
       ],
       "year": 2024,
       "accuracy": null,
       "published": null,
-      "created": "2026-07-14T16:25:16.546472+00:00"
+      "created": "2026-07-15T04:23:36.252310+00:00"
     },
     {
       "id": "ds_alphaearth_annual_v1",
@@ -147,6 +324,8 @@
       "node": null,
       "topology": null,
       "classes": [],
+      "std_classes": null,
+      "used_by_count": 6,
       "extent_bbox": [
         68.0,
         6.5,
@@ -168,6 +347,8 @@
       "classes": [
         "crops"
       ],
+      "std_classes": null,
+      "used_by_count": 0,
       "extent_bbox": [
         69.50128,
         8.13829,
@@ -192,6 +373,8 @@
         "built_up",
         "barren"
       ],
+      "std_classes": null,
+      "used_by_count": 0,
       "extent_bbox": [
         68.0,
         6.5,
@@ -205,7 +388,7 @@
     },
     {
       "id": "ds_mining_polygons_v1",
-      "name": "Mining expert polygons",
+      "name": "mining expert polygons",
       "kind": "dataset",
       "type": "training",
       "node": null,
@@ -213,6 +396,8 @@
       "classes": [
         "mining"
       ],
+      "std_classes": null,
+      "used_by_count": 1,
       "extent_bbox": [
         68.58471,
         9.00493,
@@ -222,11 +407,11 @@
       "year": 2024,
       "accuracy": null,
       "published": null,
-      "created": "2026-06-29T08:19:36.675931+00:00"
+      "created": "2026-07-15T04:24:13.935382+00:00"
     },
     {
       "id": "ds_non_acacia_polygons_v1",
-      "name": "non-acacia expert polygons",
+      "name": "Non Acacia expert polygons",
       "kind": "dataset",
       "type": "training",
       "node": null,
@@ -234,6 +419,8 @@
       "classes": [
         "non_acacia"
       ],
+      "std_classes": null,
+      "used_by_count": 1,
       "extent_bbox": [
         77.17311,
         28.52785,
@@ -243,7 +430,7 @@
       "year": 2024,
       "accuracy": null,
       "published": null,
-      "created": "2026-07-14T16:16:04.928999+00:00"
+      "created": "2026-07-15T03:50:58.966615+00:00"
     },
     {
       "id": "ds_non_tea_polygons_v1",
@@ -255,6 +442,8 @@
       "classes": [
         "non_tea"
       ],
+      "std_classes": null,
+      "used_by_count": 1,
       "extent_bbox": [
         94.87762,
         27.1446,
@@ -267,6 +456,30 @@
       "created": "2026-07-14T15:41:32.827009+00:00"
     },
     {
+      "id": "ds_seasonal_water_v1",
+      "name": "Seasonal water ground truth (water / non-water by date)",
+      "kind": "dataset",
+      "type": "training",
+      "node": null,
+      "topology": null,
+      "classes": [
+        "water",
+        "non_water"
+      ],
+      "std_classes": null,
+      "used_by_count": 1,
+      "extent_bbox": [
+        69.66117,
+        9.50331,
+        91.59197,
+        31.27444
+      ],
+      "year": 2024,
+      "accuracy": null,
+      "published": null,
+      "created": "2026-07-14T20:26:14.087353+00:00"
+    },
+    {
       "id": "ds_tea_polygons_v1",
       "name": "Tea expert polygons",
       "kind": "dataset",
@@ -276,6 +489,8 @@
       "classes": [
         "tea"
       ],
+      "std_classes": null,
+      "used_by_count": 1,
       "extent_bbox": [
         94.83222,
         27.18731,
@@ -297,6 +512,8 @@
       "classes": [
         "trees"
       ],
+      "std_classes": null,
+      "used_by_count": 0,
       "extent_bbox": [
         72.94958,
         9.40333,
@@ -318,6 +535,8 @@
       "classes": [
         "mixed"
       ],
+      "std_classes": null,
+      "used_by_count": 0,
       "extent_bbox": [
         68.0,
         6.5,
@@ -339,6 +558,8 @@
       "classes": [
         "shrubs"
       ],
+      "std_classes": null,
+      "used_by_count": 0,
       "extent_bbox": [
         68.0,
         6.5,
@@ -360,6 +581,8 @@
       "classes": [
         "mixed"
       ],
+      "std_classes": null,
+      "used_by_count": 1,
       "extent_bbox": [
         68.0,
         6.5,
@@ -372,5 +595,5 @@
       "created": "2026-06-23T16:41:24.258194+00:00"
     }
   ],
-  "generated": "2026-07-14T16:28:19.878251+00:00"
+  "generated": "2026-07-22T01:17:59.108066+00:00"
 }
