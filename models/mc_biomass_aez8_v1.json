@@ -1,0 +1,79 @@
+{
+  "id": "mc_biomass_aez8_v1",
+  "name": "Biomass AGBD (aez8, Alpha Earth + GEDI)",
+  "node": "biomass_aez8",
+  "parent_class": "greenery",
+  "topology": "regression",
+  "produces": [
+    {
+      "class": "agbd",
+      "quantity": "above-ground biomass",
+      "units": "Mg/ha"
+    }
+  ],
+  "training": {
+    "datasets": [],
+    "embedding": {
+      "source": "alphaearth+slope",
+      "dim": 65
+    },
+    "algo": "randomforest",
+    "target": "agbd (GEDI L4A)"
+  },
+  "inference": {
+    "dataset": null,
+    "embedding": {
+      "source": "alphaearth+slope",
+      "dim": 65
+    }
+  },
+  "extent": {
+    "spatial": {
+      "type": "bbox",
+      "value": [
+        75.48433149788984,
+        8.404553797444272,
+        77.99983971606922,
+        14.000021081552404
+      ]
+    },
+    "temporal": {
+      "note": "GEDI L4A shots; Alpha Earth year is a run param"
+    }
+  },
+  "metrics": {
+    "r2_spatial": 0.221,
+    "rmse": 46.71,
+    "mae": 29.77,
+    "n_test": 4360,
+    "note": "spatial (cell-held-out) holdout"
+  },
+  "artifact": {
+    "path": "data\\refine\\biomass_aez8.joblib",
+    "format": "sklearn-joblib",
+    "published_path": "artifacts/mc_biomass_aez8_v1.joblib"
+  },
+  "deployment": {
+    "ee_asset": null,
+    "tile_url": null,
+    "expressible_as_bandmath": false
+  },
+  "lineage": {
+    "base_model": null,
+    "derived_from": null
+  },
+  "about": {
+    "description": "Above-ground biomass (AGBD, Mg/ha) regressed from Alpha Earth embeddings + slope, trained on GEDI L4A footprints.",
+    "intended_use": "A continuous biomass layer over the same feature space as the LULC classes \u2014 e.g. read biomass inside the greenery/tree class.",
+    "limitations": "Regression is noisy (GEDI shots vary widely); renders on the point grid, not crisp tiles; trained per region, not pan-India yet.",
+    "evidence": ""
+  },
+  "zoo": {
+    "published": true,
+    "valid_region_label": "India",
+    "contributor": ""
+  },
+  "version": 2,
+  "created": "2026-07-27T18:04:06.264274+00:00",
+  "updated": "2026-07-28T19:54:32.017781+00:00"
+}

@@ -1,6 +1,6 @@
 {
-  "id": "mc_water_fortnight_v1",
-  "name": "Seasonal water (per-fortnight, Sentinel-1/2)",
+  "id": "mc_water_fortnight_augmented_v1",
+  "name": "Seasonal water (per-fortnight, +dryland negatives)",
   "node": "water_fortnight",
   "parent_class": "water",
   "topology": "flat_multiclass",
@@ -76,9 +76,9 @@
     }
   },
   "artifact": {
-    "path": "data/refine/water_fortnight.joblib",
+    "path": "data/refine/water_fortnight_augmented.joblib",
     "format": "sklearn-joblib",
-    "published_path": "artifacts/mc_water_fortnight_v1.joblib"
+    "published_path": "artifacts/mc_water_fortnight_augmented_v1.joblib"
   },
   "deployment": {
     "ee_asset": null,
@@ -100,7 +100,7 @@
     "valid_region_label": "India",
     "contributor": ""
   },
-  "version": 7,
-  "created": "2026-07-28T08:11:19.827388+00:00",
-  "updated": "2026-07-28T19:54:32.167926+00:00"
+  "version": 2,
+  "created": "2026-07-28T08:11:19.855468+00:00",
+  "updated": "2026-07-28T19:54:32.145629+00:00"
 }

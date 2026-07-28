@@ -14,13 +14,14 @@
   ],
   "training": {
     "datasets": [
+      "ds_master_alpha_full_v1",
       "ds_mining_polygons_v1"
     ],
     "embedding": {
       "source": "alphaearth",
       "dim": 64
     },
-    "algo": "StandardScaler->LinearSVC",
+    "algo": "StandardScaler->linearsvc",
     "class_weight": "balanced",
     "balancing": {
       "method": "class_weight_balanced",
@@ -39,10 +40,10 @@
     "spatial": {
       "type": "bbox",
       "value": [
-        68.58471,
-        9.00493,
-        87.76123,
-        34.05857
+        68.0,
+        6.5,
+        97.5,
+        37.5
       ]
     },
     "temporal": {
@@ -50,22 +51,22 @@
     }
   },
   "metrics": {
-    "accuracy": 0.867,
-    "macro_f1": 0.854,
+    "accuracy": 0.864,
+    "macro_f1": 0.846,
     "eval": "polygon-holdout",
-    "n_test": 3171,
+    "n_test": 5894,
     "per_class": {
       "barren_other": {
-        "precision": 0.903,
-        "recall": 0.891,
-        "f1": 0.897,
-        "support": 2071
+        "precision": 0.77,
+        "recall": 0.82,
+        "f1": 0.794,
+        "support": 1894
       },
       "mining": {
-        "precision": 0.8,
-        "recall": 0.82,
-        "f1": 0.81,
-        "support": 1100
+        "precision": 0.912,
+        "recall": 0.884,
+        "f1": 0.898,
+        "support": 4000
       }
     }
   },
@@ -94,7 +95,7 @@
     "valid_region_label": "India",
     "contributor": ""
   },
-  "version": 5,
-  "created": "2026-06-29T08:19:36.691273+00:00",
-  "updated": "2026-06-30T16:47:09.560337+00:00"
+  "version": 7,
+  "created": "2026-07-27T18:16:49.480843+00:00",
+  "updated": "2026-07-28T19:54:31.550473+00:00"
 }

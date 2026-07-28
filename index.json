@@ -25,15 +25,85 @@
       ],
       "used_by_count": null,
       "extent_bbox": [
-        68.58471,
-        9.00493,
-        87.76123,
-        34.05857
+        68.0,
+        6.5,
+        97.5,
+        37.5
       ],
       "year": 2024,
-      "accuracy": 0.867,
+      "accuracy": 0.864,
       "published": true,
-      "created": "2026-06-29T08:19:36.691273+00:00"
+      "created": "2026-07-27T18:16:49.480843+00:00"
+    },
+    {
+      "id": "mc_biomass_aez8_v1",
+      "name": "Biomass AGBD (aez8, Alpha Earth + GEDI)",
+      "kind": "model",
+      "type": null,
+      "node": "biomass_aez8",
+      "topology": "regression",
+      "classes": [
+        "agbd"
+      ],
+      "std_classes": [
+        {
+          "class": "agbd",
+          "std": null,
+          "scheme": null
+        }
+      ],
+      "used_by_count": null,
+      "extent_bbox": [
+        75.48433149788984,
+        8.404553797444272,
+        77.99983971606922,
+        14.000021081552404
+      ],
+      "year": null,
+      "accuracy": null,
+      "published": true,
+      "created": "2026-07-27T18:04:06.264274+00:00"
+    },
+    {
+      "id": "mc_farmshrub_ee_v1",
+      "name": "Farm / plantation / scrubland (IndiaSAT AEZ RF)",
+      "kind": "model",
+      "type": null,
+      "node": "farmshrub",
+      "topology": "ee_rf",
+      "classes": [
+        "farm",
+        "plantation",
+        "scrubland"
+      ],
+      "std_classes": [
+        {
+          "class": "farm",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "plantation",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "scrubland",
+          "std": null,
+          "scheme": null
+        }
+      ],
+      "used_by_count": null,
+      "extent_bbox": [
+        68.0,
+        6.5,
+        97.5,
+        37.5
+      ],
+      "year": null,
+      "accuracy": null,
+      "published": true,
+      "created": "2026-07-28T07:56:24.857439+00:00"
     },
     {
       "id": "mc_greenery_prev1_v1",
@@ -102,8 +172,8 @@
       ],
       "year": 2024,
       "accuracy": null,
-      "published": false,
-      "created": "2026-07-22T01:09:55.471448+00:00"
+      "published": true,
+      "created": "2026-07-22T04:40:31.687159+00:00"
     },
     {
       "id": "mc_greenery_v1",
@@ -191,7 +261,77 @@
       "year": 2024,
       "accuracy": 0.8,
       "published": true,
-      "created": "2026-07-12T20:48:44.102544+00:00"
+      "created": "2026-07-22T01:18:25.700451+00:00"
+    },
+    {
+      "id": "mc_treecrop_ee_v1",
+      "name": "Tree vs crop (IndiaSAT SAR RF)",
+      "kind": "model",
+      "type": null,
+      "node": "treecrop",
+      "topology": "ee_rf",
+      "classes": [
+        "cropland",
+        "tree"
+      ],
+      "std_classes": [
+        {
+          "class": "cropland",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "tree",
+          "std": null,
+          "scheme": null
+        }
+      ],
+      "used_by_count": null,
+      "extent_bbox": [
+        68.0,
+        6.5,
+        97.5,
+        37.5
+      ],
+      "year": null,
+      "accuracy": null,
+      "published": true,
+      "created": "2026-07-28T07:56:24.683791+00:00"
+    },
+    {
+      "id": "mc_water_fortnight_augmented_v1",
+      "name": "Seasonal water (per-fortnight, +dryland negatives)",
+      "kind": "model",
+      "type": null,
+      "node": "water_fortnight",
+      "topology": "flat_multiclass",
+      "classes": [
+        "non_water",
+        "water"
+      ],
+      "std_classes": [
+        {
+          "class": "non_water",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "water",
+          "std": null,
+          "scheme": null
+        }
+      ],
+      "used_by_count": null,
+      "extent_bbox": [
+        68.0,
+        6.5,
+        97.5,
+        37.5
+      ],
+      "year": null,
+      "accuracy": 0.9736251402918069,
+      "published": true,
+      "created": "2026-07-28T08:11:19.855468+00:00"
     },
     {
       "id": "mc_water_fortnight_v1",
@@ -218,15 +358,15 @@
       ],
       "used_by_count": null,
       "extent_bbox": [
-        69.66116619986512,
-        9.50330820746074,
-        91.59197012337486,
-        31.27444376154062
+        68.0,
+        6.5,
+        97.5,
+        37.5
       ],
       "year": null,
-      "accuracy": 0.9178885630498533,
+      "accuracy": 0.9736251402918069,
       "published": true,
-      "created": "2026-07-21T15:24:28.843488+00:00"
+      "created": "2026-07-28T08:11:19.827388+00:00"
     },
     {
       "id": "mc_worldcover_base_v1",
@@ -374,7 +514,7 @@
         "barren"
       ],
       "std_classes": null,
-      "used_by_count": 0,
+      "used_by_count": 1,
       "extent_bbox": [
         68.0,
         6.5,
@@ -388,7 +528,7 @@
     },
     {
       "id": "ds_mining_polygons_v1",
-      "name": "mining expert polygons",
+      "name": "Mining expert polygons",
       "kind": "dataset",
       "type": "training",
       "node": null,
@@ -401,13 +541,13 @@
       "extent_bbox": [
         68.58471,
         9.00493,
-        87.76123,
-        34.05857
+        95.75855,
+        34.0586
       ],
       "year": 2024,
       "accuracy": null,
       "published": null,
-      "created": "2026-07-15T04:24:13.935382+00:00"
+      "created": "2026-07-27T18:16:49.449404+00:00"
     },
     {
       "id": "ds_non_acacia_polygons_v1",
@@ -467,7 +607,7 @@
         "non_water"
       ],
       "std_classes": null,
-      "used_by_count": 1,
+      "used_by_count": 2,
       "extent_bbox": [
         69.66117,
         9.50331,
@@ -501,6 +641,27 @@
       "accuracy": null,
       "published": null,
       "created": "2026-07-14T15:41:32.805339+00:00"
+    },
+    {
+      "id": "ds_tessera_annual_v1",
+      "name": "Tessera annual embeddings (128-d) \u2014 model input features",
+      "kind": "dataset",
+      "type": "inference",
+      "node": null,
+      "topology": null,
+      "classes": [],
+      "std_classes": null,
+      "used_by_count": 0,
+      "extent_bbox": [
+        68.0,
+        6.5,
+        97.5,
+        37.5
+      ],
+      "year": 2024,
+      "accuracy": null,
+      "published": null,
+      "created": "2026-07-22T01:27:20.496729+00:00"
     },
     {
       "id": "ds_trees_polygons_v1",
@@ -595,5 +756,5 @@
       "created": "2026-06-23T16:41:24.258194+00:00"
     }
   ],
-  "generated": "2026-07-22T01:17:59.108066+00:00"
+  "generated": "2026-07-28T19:54:32.184446+00:00"
 }

@@ -8,7 +8,7 @@
     {
       "class": "acacia",
       "name": "acacia",
-      "count": 912
+      "count": 100
     }
   ],
   "definition": {
@@ -19,10 +19,10 @@
     "spatial": {
       "type": "bbox",
       "value": [
-        77.17308,
-        28.52783,
-        77.20058,
-        28.54642
+        68.58471,
+        9.00493,
+        87.76123,
+        34.05857
       ]
     },
     "temporal": {
@@ -34,17 +34,17 @@
     "method": "drawn/uploaded polygons",
     "evidence": [],
     "license": null,
-    "notes": "marked between 2026-07-14T16:25:08.329996+00:00 and 2026-07-14T16:25:16.444942+00:00"
+    "notes": "marked between 2026-07-15T04:23:36.114228+00:00 and 2026-07-15T04:23:36.138566+00:00"
   },
   "quality": {
-    "n_polygons": 912,
-    "occupied_cells": 1,
-    "spatial_diversity": -0.0,
+    "n_polygons": 100,
+    "occupied_cells": 65,
+    "spatial_diversity": 0.867,
     "class_balance": {
       "acacia": 1.0
     }
   },
-  "version": 8,
-  "created": "2026-07-14T16:25:16.546472+00:00",
-  "updated": "2026-07-14T16:25:16.547228+00:00"
+  "version": 15,
+  "created": "2026-07-15T04:23:36.252310+00:00",
+  "updated": "2026-07-15T04:23:36.262300+00:00"
 }
