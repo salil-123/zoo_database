@@ -88,14 +88,14 @@
     "description": "Barren split (barren_other / mining)",
     "intended_use": "Layered on the India base map.",
     "limitations": "Linear model; rare-class recall limited.",
-    "evidence": ""
+    "evidence": "[#9 delineation] Pixel+vectorize vs GT mining polygons (25 sites, IoU>=0.3): precision 0.04, recall 0.16, F1 0.07, mean IoU 0.52 \u2014 over-fragments, not an object delineator; a segmentation route is warranted. [#12 pan-India classifier] buffer-ring hard negatives, best RF+tuned-threshold: mining P 0.61, R 0.58, F1 0.59 (linear 0.55) \u2014 RF+threshold lifts precision 0.45->0.61. Detector/screen quality (week7 pixel acc 0.86)."
   },
   "zoo": {
     "published": true,
     "valid_region_label": "India",
     "contributor": ""
   },
-  "version": 7,
+  "version": 12,
   "created": "2026-07-27T18:16:49.480843+00:00",
-  "updated": "2026-07-28T19:54:31.550473+00:00"
+  "updated": "2026-08-02T11:05:48.401860+00:00"
 }

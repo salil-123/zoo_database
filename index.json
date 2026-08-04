@@ -36,35 +36,6 @@
       "created": "2026-07-27T18:16:49.480843+00:00"
     },
     {
-      "id": "mc_biomass_aez8_v1",
-      "name": "Biomass AGBD (aez8, Alpha Earth + GEDI)",
-      "kind": "model",
-      "type": null,
-      "node": "biomass_aez8",
-      "topology": "regression",
-      "classes": [
-        "agbd"
-      ],
-      "std_classes": [
-        {
-          "class": "agbd",
-          "std": null,
-          "scheme": null
-        }
-      ],
-      "used_by_count": null,
-      "extent_bbox": [
-        75.48433149788984,
-        8.404553797444272,
-        77.99983971606922,
-        14.000021081552404
-      ],
-      "year": null,
-      "accuracy": null,
-      "published": true,
-      "created": "2026-07-27T18:04:06.264274+00:00"
-    },
-    {
       "id": "mc_farmshrub_ee_v1",
       "name": "Farm / plantation / scrubland (IndiaSAT AEZ RF)",
       "kind": "model",
@@ -478,6 +449,29 @@
       "created": "2026-06-23T16:41:24.234160+00:00"
     },
     {
+      "id": "ds_barren_polygons_v1",
+      "name": "Barren expert polygons",
+      "kind": "dataset",
+      "type": "training",
+      "node": null,
+      "topology": null,
+      "classes": [
+        "barren"
+      ],
+      "std_classes": null,
+      "used_by_count": 0,
+      "extent_bbox": [
+        71.71652,
+        27.90192,
+        71.779,
+        27.95469
+      ],
+      "year": 2024,
+      "accuracy": null,
+      "published": null,
+      "created": "2026-08-04T15:56:14.588493+00:00"
+    },
+    {
       "id": "ds_crops_polygons_v1",
       "name": "Crops expert polygons",
       "kind": "dataset",
@@ -756,5 +750,5 @@
       "created": "2026-06-23T16:41:24.258194+00:00"
     }
   ],
-  "generated": "2026-07-28T19:54:32.184446+00:00"
+  "generated": "2026-08-04T15:56:14.718920+00:00"
 }
