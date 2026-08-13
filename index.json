@@ -31,9 +31,9 @@
         37.5
       ],
       "year": 2024,
-      "accuracy": 0.864,
+      "accuracy": 1.0,
       "published": true,
-      "created": "2026-07-27T18:16:49.480843+00:00"
+      "created": "2026-08-09T12:00:40.486360+00:00"
     },
     {
       "id": "mc_farmshrub_ee_v1",
@@ -144,7 +144,7 @@
       "year": 2024,
       "accuracy": null,
       "published": true,
-      "created": "2026-07-22T04:40:31.687159+00:00"
+      "created": "2026-08-09T11:52:23.203723+00:00"
     },
     {
       "id": "mc_greenery_v1",
@@ -340,6 +340,41 @@
       "created": "2026-07-28T08:11:19.827388+00:00"
     },
     {
+      "id": "mc_water_rule_v1",
+      "name": "Rule split: water (open_water / other_water)",
+      "kind": "model",
+      "type": null,
+      "node": "water",
+      "topology": "rule_split",
+      "classes": [
+        "open_water",
+        "other_water"
+      ],
+      "std_classes": [
+        {
+          "class": "open_water",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "other_water",
+          "std": null,
+          "scheme": null
+        }
+      ],
+      "used_by_count": null,
+      "extent_bbox": [
+        68.0,
+        6.5,
+        97.5,
+        37.5
+      ],
+      "year": 2024,
+      "accuracy": null,
+      "published": true,
+      "created": "2026-08-09T11:53:05.153591+00:00"
+    },
+    {
       "id": "mc_worldcover_base_v1",
       "name": "WorldCover base \u2014 7-class LULC (India)",
       "kind": "model",
@@ -402,7 +437,7 @@
       "year": 2024,
       "accuracy": null,
       "published": true,
-      "created": "2026-06-30T17:13:18.619598+00:00"
+      "created": "2026-08-09T12:18:23.253867+00:00"
     },
     {
       "id": "ds_acacia_polygons_v1",
@@ -436,7 +471,7 @@
       "topology": null,
       "classes": [],
       "std_classes": null,
-      "used_by_count": 6,
+      "used_by_count": 7,
       "extent_bbox": [
         68.0,
         6.5,
@@ -522,7 +557,7 @@
     },
     {
       "id": "ds_mining_polygons_v1",
-      "name": "Mining expert polygons",
+      "name": "mining expert polygons",
       "kind": "dataset",
       "type": "training",
       "node": null,
@@ -533,15 +568,15 @@
       "std_classes": null,
       "used_by_count": 1,
       "extent_bbox": [
-        68.58471,
-        9.00493,
-        95.75855,
-        34.0586
+        77.172,
+        28.525,
+        77.199,
+        28.549
       ],
       "year": 2024,
       "accuracy": null,
       "published": null,
-      "created": "2026-07-27T18:16:49.449404+00:00"
+      "created": "2026-08-09T12:00:40.145648+00:00"
     },
     {
       "id": "ds_non_acacia_polygons_v1",
@@ -750,5 +785,5 @@
       "created": "2026-06-23T16:41:24.258194+00:00"
     }
   ],
-  "generated": "2026-08-04T15:56:14.718920+00:00"
+  "generated": "2026-08-13T06:43:59.141925+00:00"
 }

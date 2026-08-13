@@ -1,15 +1,15 @@
 {
-  "id": "mc_greenery_rule_v1",
-  "name": "Rule split: greenery (dense_veg / sparse_veg)",
-  "node": "greenery",
+  "id": "mc_water_rule_v1",
+  "name": "Rule split: water (open_water / other_water)",
+  "node": "water",
   "parent_class": "root",
   "topology": "rule_split",
   "produces": [
     {
-      "class": "dense_veg"
+      "class": "open_water"
     },
     {
-      "class": "sparse_veg"
+      "class": "other_water"
     }
   ],
   "training": {
@@ -46,7 +46,7 @@
   "artifact": {
     "path": "data/hierarchy.json",
     "format": "rule-expression",
-    "published_path": "artifacts/mc_greenery_rule_v1.joblib"
+    "published_path": "artifacts/mc_water_rule_v1.joblib"
   },
   "deployment": {
     "ee_asset": null,
@@ -60,18 +60,18 @@
   "rule": {
     "clauses": [
       {
-        "when": "ndvi_annual > 0.3",
-        "class": "dense_veg"
+        "when": "ndwi > 0",
+        "class": "open_water"
       }
     ],
-    "default": "sparse_veg",
+    "default": "other_water",
     "variables": [
-      "ndvi_annual"
+      "ndwi"
     ],
-    "expression": "if ndvi_annual > 0.3 \u2192 dense_veg ; else \u2192 sparse_veg"
+    "expression": "if ndwi > 0 \u2192 open_water ; else \u2192 other_water"
   },
   "about": {
-    "description": "Splits greenery by rule \u2014 if ndvi_annual > 0.3 \u2192 dense_veg ; else \u2192 sparse_veg.",
+    "description": "Splits water by rule \u2014 if ndwi > 0 \u2192 open_water ; else \u2192 other_water.",
     "intended_use": "An interpretable, training-free split over vegetation/water/terrain indices, evaluated live in Earth Engine.",
     "limitations": "Only as good as the chosen thresholds; no learned calibration.",
     "evidence": ""
@@ -81,7 +81,7 @@
     "valid_region_label": "India",
     "contributor": ""
   },
-  "version": 6,
-  "created": "2026-08-09T11:52:23.203723+00:00",
-  "updated": "2026-08-13T06:43:59.035646+00:00"
+  "version": 2,
+  "created": "2026-08-09T11:53:05.153591+00:00",
+  "updated": "2026-08-13T06:43:59.085337+00:00"
 }

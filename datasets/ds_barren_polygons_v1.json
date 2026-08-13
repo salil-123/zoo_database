@@ -34,7 +34,8 @@
     "method": "drawn/uploaded polygons",
     "evidence": [],
     "license": null,
-    "notes": "marked between 2026-08-04T15:56:14.574910+00:00 and 2026-08-04T15:56:14.574910+00:00"
+    "notes": "marked between 2026-08-04T15:56:14.574910+00:00 and 2026-08-04T15:56:14.574910+00:00",
+    "source_url": ""
   },
   "quality": {
     "n_polygons": 1,
@@ -44,7 +45,8 @@
       "barren": 1.0
     }
   },
-  "version": 2,
+  "version": 4,
   "created": "2026-08-04T15:56:14.588493+00:00",
-  "updated": "2026-08-04T15:56:14.599902+00:00"
+  "updated": "2026-08-04T19:45:25.628640+00:00",
+  "source_url": ""
 }

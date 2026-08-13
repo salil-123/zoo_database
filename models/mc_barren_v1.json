@@ -51,22 +51,22 @@
     }
   },
   "metrics": {
-    "accuracy": 0.864,
-    "macro_f1": 0.846,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
     "eval": "polygon-holdout",
-    "n_test": 5894,
+    "n_test": 2021,
     "per_class": {
       "barren_other": {
-        "precision": 0.77,
-        "recall": 0.82,
-        "f1": 0.794,
-        "support": 1894
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 1971
       },
       "mining": {
-        "precision": 0.912,
-        "recall": 0.884,
-        "f1": 0.898,
-        "support": 4000
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 50
       }
     }
   },
@@ -88,14 +88,14 @@
     "description": "Barren split (barren_other / mining)",
     "intended_use": "Layered on the India base map.",
     "limitations": "Linear model; rare-class recall limited.",
-    "evidence": "[#9 delineation] Pixel+vectorize vs GT mining polygons (25 sites, IoU>=0.3): precision 0.04, recall 0.16, F1 0.07, mean IoU 0.52 \u2014 over-fragments, not an object delineator; a segmentation route is warranted. [#12 pan-India classifier] buffer-ring hard negatives, best RF+tuned-threshold: mining P 0.61, R 0.58, F1 0.59 (linear 0.55) \u2014 RF+threshold lifts precision 0.45->0.61. Detector/screen quality (week7 pixel acc 0.86)."
+    "evidence": ""
   },
   "zoo": {
     "published": true,
     "valid_region_label": "India",
     "contributor": ""
   },
-  "version": 12,
-  "created": "2026-07-27T18:16:49.480843+00:00",
-  "updated": "2026-08-02T11:05:48.401860+00:00"
+  "version": 15,
+  "created": "2026-08-09T12:00:40.486360+00:00",
+  "updated": "2026-08-13T06:43:58.887116+00:00"
 }
