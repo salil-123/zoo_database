@@ -32,6 +32,7 @@
       ],
       "year": 2024,
       "accuracy": 1.0,
+      "min_test_px": 50,
       "published": true,
       "created": "2026-08-09T12:00:40.486360+00:00"
     },
@@ -73,6 +74,7 @@
       ],
       "year": null,
       "accuracy": null,
+      "min_test_px": null,
       "published": true,
       "created": "2026-07-28T07:56:24.857439+00:00"
     },
@@ -108,6 +110,7 @@
       ],
       "year": 2024,
       "accuracy": 0.963,
+      "min_test_px": 850,
       "published": true,
       "created": "2026-07-14T16:17:44.506619+00:00"
     },
@@ -143,6 +146,7 @@
       ],
       "year": 2024,
       "accuracy": null,
+      "min_test_px": null,
       "published": true,
       "created": "2026-08-09T11:52:23.203723+00:00"
     },
@@ -178,6 +182,7 @@
       ],
       "year": 2024,
       "accuracy": 0.728,
+      "min_test_px": 3900,
       "published": true,
       "created": "2026-07-15T03:50:58.993058+00:00"
     },
@@ -231,6 +236,7 @@
       ],
       "year": 2024,
       "accuracy": 0.8,
+      "min_test_px": null,
       "published": true,
       "created": "2026-07-22T01:18:25.700451+00:00"
     },
@@ -266,6 +272,7 @@
       ],
       "year": null,
       "accuracy": null,
+      "min_test_px": null,
       "published": true,
       "created": "2026-07-28T07:56:24.683791+00:00"
     },
@@ -301,6 +308,7 @@
       ],
       "year": null,
       "accuracy": 0.9736251402918069,
+      "min_test_px": 168,
       "published": true,
       "created": "2026-07-28T08:11:19.855468+00:00"
     },
@@ -336,6 +344,7 @@
       ],
       "year": null,
       "accuracy": 0.9736251402918069,
+      "min_test_px": 168,
       "published": true,
       "created": "2026-07-28T08:11:19.827388+00:00"
     },
@@ -371,6 +380,7 @@
       ],
       "year": 2024,
       "accuracy": null,
+      "min_test_px": null,
       "published": true,
       "created": "2026-08-09T11:53:05.153591+00:00"
     },
@@ -436,6 +446,7 @@
       ],
       "year": 2024,
       "accuracy": null,
+      "min_test_px": null,
       "published": true,
       "created": "2026-08-09T12:18:23.253867+00:00"
     },
@@ -459,6 +470,7 @@
       ],
       "year": 2024,
       "accuracy": null,
+      "min_test_px": null,
       "published": null,
       "created": "2026-07-15T04:23:36.252310+00:00"
     },
@@ -480,6 +492,7 @@
       ],
       "year": 2024,
       "accuracy": null,
+      "min_test_px": null,
       "published": null,
       "created": "2026-06-23T16:41:24.234160+00:00"
     },
@@ -503,6 +516,7 @@
       ],
       "year": 2024,
       "accuracy": null,
+      "min_test_px": null,
       "published": null,
       "created": "2026-08-04T15:56:14.588493+00:00"
     },
@@ -526,6 +540,7 @@
       ],
       "year": 2024,
       "accuracy": null,
+      "min_test_px": null,
       "published": null,
       "created": "2026-06-23T16:41:30.359159+00:00"
     },
@@ -552,6 +567,7 @@
       ],
       "year": 2024,
       "accuracy": null,
+      "min_test_px": null,
       "published": null,
       "created": "2026-06-23T16:41:24.247658+00:00"
     },
@@ -575,6 +591,7 @@
       ],
       "year": 2024,
       "accuracy": null,
+      "min_test_px": null,
       "published": null,
       "created": "2026-08-09T12:00:40.145648+00:00"
     },
@@ -598,6 +615,7 @@
       ],
       "year": 2024,
       "accuracy": null,
+      "min_test_px": null,
       "published": null,
       "created": "2026-07-15T03:50:58.966615+00:00"
     },
@@ -621,6 +639,7 @@
       ],
       "year": 2024,
       "accuracy": null,
+      "min_test_px": null,
       "published": null,
       "created": "2026-07-14T15:41:32.827009+00:00"
     },
@@ -645,6 +664,7 @@
       ],
       "year": 2024,
       "accuracy": null,
+      "min_test_px": null,
       "published": null,
       "created": "2026-07-14T20:26:14.087353+00:00"
     },
@@ -668,6 +688,7 @@
       ],
       "year": 2024,
       "accuracy": null,
+      "min_test_px": null,
       "published": null,
       "created": "2026-07-14T15:41:32.805339+00:00"
     },
@@ -689,6 +710,7 @@
       ],
       "year": 2024,
       "accuracy": null,
+      "min_test_px": null,
       "published": null,
       "created": "2026-07-22T01:27:20.496729+00:00"
     },
@@ -712,6 +734,7 @@
       ],
       "year": 2024,
       "accuracy": null,
+      "min_test_px": null,
       "published": null,
       "created": "2026-06-23T16:41:30.390870+00:00"
     },
@@ -735,6 +758,7 @@
       ],
       "year": 2024,
       "accuracy": null,
+      "min_test_px": null,
       "published": null,
       "created": "2026-06-23T16:41:24.268573+00:00"
     },
@@ -758,6 +782,7 @@
       ],
       "year": 2021,
       "accuracy": null,
+      "min_test_px": null,
       "published": null,
       "created": "2026-06-23T16:41:30.402231+00:00"
     },
@@ -781,9 +806,10 @@
       ],
       "year": 2024,
       "accuracy": null,
+      "min_test_px": null,
       "published": null,
       "created": "2026-06-23T16:41:24.258194+00:00"
     }
   ],
-  "generated": "2026-08-13T06:43:59.141925+00:00"
+  "generated": "2026-10-06T02:15:58.350589+00:00"
 }
