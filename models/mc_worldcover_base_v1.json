@@ -69,8 +69,7 @@
   },
   "artifact": {
     "path": "data/model_worldcover_base.joblib",
-    "format": "sklearn-joblib",
-    "published_path": "artifacts/mc_worldcover_base_v1.joblib"
+    "format": "sklearn-joblib"
   },
   "deployment": {
     "ee_asset": null,
@@ -92,7 +91,7 @@
     "valid_region_label": "India",
     "contributor": ""
   },
-  "version": 8,
-  "created": "2026-08-09T12:18:23.253867+00:00",
-  "updated": "2026-08-13T06:43:59.120908+00:00"
+  "version": 10,
+  "created": "2026-10-12T09:28:04.384996+00:00",
+  "updated": "2026-10-12T09:56:50.416960+00:00"
 }
