@@ -6,6 +6,7 @@
       "kind": "model",
       "type": null,
       "node": "barren",
+      "apply_after": "barren",
       "topology": "per_node_split",
       "classes": [
         "barren_other",
@@ -42,6 +43,7 @@
       "kind": "model",
       "type": null,
       "node": "greenery",
+      "apply_after": "greenery",
       "topology": "rule_split",
       "classes": [
         "dense_veg",
@@ -78,6 +80,7 @@
       "kind": "model",
       "type": null,
       "node": "greenery",
+      "apply_after": "greenery",
       "topology": "per_node_split",
       "classes": [
         "non_tea",
@@ -114,6 +117,7 @@
       "kind": "model",
       "type": null,
       "node": "greenery",
+      "apply_after": "greenery",
       "topology": "per_node_split",
       "classes": [
         "acacia",
@@ -146,10 +150,11 @@
     },
     {
       "id": "mc_root_v1",
-      "name": "Core Stack base map \u2014 4-class LULC (India)",
+      "name": "Core Stack base map: 4-class LULC (India)",
       "kind": "model",
       "type": null,
       "node": "root",
+      "apply_after": "root",
       "topology": "base_pooled",
       "classes": [
         "barren",
@@ -204,6 +209,7 @@
       "kind": "model",
       "type": null,
       "node": "treecrop",
+      "apply_after": "greenery",
       "topology": "ee_rf",
       "classes": [
         "cropland",
@@ -240,6 +246,7 @@
       "kind": "model",
       "type": null,
       "node": "water_fortnight",
+      "apply_after": "water",
       "topology": "flat_multiclass",
       "classes": [
         "non_water",
@@ -272,10 +279,11 @@
     },
     {
       "id": "mc_worldcover_base_v1",
-      "name": "WorldCover base \u2014 7-class LULC (India)",
+      "name": "WorldCover base: 7-class LULC (India)",
       "kind": "model",
       "type": null,
       "node": "root",
+      "apply_after": "root",
       "topology": "base_pooled",
       "classes": [
         "bare",
@@ -342,6 +350,7 @@
       "kind": "dataset",
       "type": "training",
       "node": null,
+      "apply_after": null,
       "topology": null,
       "classes": [
         "acacia"
@@ -362,10 +371,11 @@
     },
     {
       "id": "ds_alphaearth_annual_v1",
-      "name": "Alpha Earth annual embeddings (64-d) \u2014 model input features",
+      "name": "Alpha Earth annual embeddings (64-d): model input features",
       "kind": "dataset",
       "type": "inference",
       "node": null,
+      "apply_after": null,
       "topology": null,
       "classes": [],
       "std_classes": null,
@@ -388,6 +398,7 @@
       "kind": "dataset",
       "type": "training",
       "node": null,
+      "apply_after": null,
       "topology": null,
       "classes": [
         "barren"
@@ -412,6 +423,7 @@
       "kind": "dataset",
       "type": "training",
       "node": null,
+      "apply_after": null,
       "topology": null,
       "classes": [
         "crops"
@@ -436,6 +448,7 @@
       "kind": "dataset",
       "type": "training",
       "node": null,
+      "apply_after": null,
       "topology": null,
       "classes": [
         "greenery",
@@ -463,6 +476,7 @@
       "kind": "dataset",
       "type": "training",
       "node": null,
+      "apply_after": null,
       "topology": null,
       "classes": [
         "mining"
@@ -487,6 +501,7 @@
       "kind": "dataset",
       "type": "training",
       "node": null,
+      "apply_after": null,
       "topology": null,
       "classes": [
         "non_acacia"
@@ -511,6 +526,7 @@
       "kind": "dataset",
       "type": "training",
       "node": null,
+      "apply_after": null,
       "topology": null,
       "classes": [
         "non_tea"
@@ -535,6 +551,7 @@
       "kind": "dataset",
       "type": "training",
       "node": null,
+      "apply_after": null,
       "topology": null,
       "classes": [
         "water",
@@ -560,6 +577,7 @@
       "kind": "dataset",
       "type": "training",
       "node": null,
+      "apply_after": null,
       "topology": null,
       "classes": [
         "tea"
@@ -580,10 +598,11 @@
     },
     {
       "id": "ds_tessera_annual_v1",
-      "name": "Tessera annual embeddings (128-d) \u2014 model input features",
+      "name": "Tessera annual embeddings (128-d): model input features",
       "kind": "dataset",
       "type": "inference",
       "node": null,
+      "apply_after": null,
       "topology": null,
       "classes": [],
       "std_classes": null,
@@ -606,6 +625,7 @@
       "kind": "dataset",
       "type": "training",
       "node": null,
+      "apply_after": null,
       "topology": null,
       "classes": [
         "trees"
@@ -630,6 +650,7 @@
       "kind": "dataset",
       "type": "training",
       "node": null,
+      "apply_after": null,
       "topology": null,
       "classes": [
         "mixed"
@@ -654,6 +675,7 @@
       "kind": "dataset",
       "type": "training",
       "node": null,
+      "apply_after": null,
       "topology": null,
       "classes": [
         "shrubs"
@@ -678,6 +700,7 @@
       "kind": "dataset",
       "type": "training",
       "node": null,
+      "apply_after": null,
       "topology": null,
       "classes": [
         "mixed"
@@ -697,5 +720,5 @@
       "created": "2026-06-23T16:41:24.258194+00:00"
     }
   ],
-  "generated": "2026-10-12T09:56:50.429032+00:00"
+  "generated": "2026-10-18T17:25:48.725767+00:00"
 }
