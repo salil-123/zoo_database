@@ -241,25 +241,169 @@
       "created": "2026-07-28T07:56:24.683791+00:00"
     },
     {
-      "id": "mc_water_fortnight_augmented_v1",
-      "name": "Seasonal water (per-fortnight, +dryland negatives)",
+      "id": "mc_water_fortnights_v1",
+      "name": "Water by fortnight (26 classes, Sentinel-1/2)",
       "kind": "model",
       "type": null,
-      "node": "water_fortnight",
+      "node": "water",
       "apply_after": "water",
-      "topology": "flat_multiclass",
+      "topology": "per_node_split",
       "classes": [
-        "non_water",
-        "water"
+        "fortnight1",
+        "fortnight2",
+        "fortnight3",
+        "fortnight4",
+        "fortnight5",
+        "fortnight6",
+        "fortnight7",
+        "fortnight8",
+        "fortnight9",
+        "fortnight10",
+        "fortnight11",
+        "fortnight12",
+        "fortnight13",
+        "fortnight14",
+        "fortnight15",
+        "fortnight16",
+        "fortnight17",
+        "fortnight18",
+        "fortnight19",
+        "fortnight20",
+        "fortnight21",
+        "fortnight22",
+        "fortnight23",
+        "fortnight24",
+        "fortnight25",
+        "fortnight26"
       ],
       "std_classes": [
         {
-          "class": "non_water",
+          "class": "fortnight1",
           "std": null,
           "scheme": null
         },
         {
-          "class": "water",
+          "class": "fortnight2",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "fortnight3",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "fortnight4",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "fortnight5",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "fortnight6",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "fortnight7",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "fortnight8",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "fortnight9",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "fortnight10",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "fortnight11",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "fortnight12",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "fortnight13",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "fortnight14",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "fortnight15",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "fortnight16",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "fortnight17",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "fortnight18",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "fortnight19",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "fortnight20",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "fortnight21",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "fortnight22",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "fortnight23",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "fortnight24",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "fortnight25",
+          "std": null,
+          "scheme": null
+        },
+        {
+          "class": "fortnight26",
           "std": null,
           "scheme": null
         }
@@ -267,15 +411,15 @@
       "used_by_count": null,
       "extent_bbox": [
         68.0,
-        6.5,
+        6.0,
         97.5,
         37.5
       ],
       "year": null,
-      "accuracy": 0.9736251402918069,
-      "min_test_px": 168,
+      "accuracy": null,
+      "min_test_px": null,
       "published": true,
-      "created": "2026-07-28T08:11:19.855468+00:00"
+      "created": "2026-10-19T18:21:14+00:00"
     },
     {
       "id": "mc_worldcover_base_v1",
@@ -720,5 +864,5 @@
       "created": "2026-06-23T16:41:24.258194+00:00"
     }
   ],
-  "generated": "2026-10-18T17:25:48.725767+00:00"
+  "generated": "2026-10-19T18:41:03.383403+00:00"
 }
